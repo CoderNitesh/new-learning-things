@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+
+$blue: #2f74c0;
+$medium: 800px;
+
+.taskify-app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $blue;
+    font-family: 'Neucha', cursive;
+
+    &-heading{
+        width: 50%;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin: 2rem 0;
+        color: white;
+        z-index: 1;
+        text-align: center;
+        
+        @media (max-width: $medium) {
+            font-size: 2rem;
+            margin: 1.3rem 0;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+$blue: #2f74c0;
+$white: white;
+
+.search-container {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+
+  &-input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+  }
+
+  &-input:focus {
+    box-shadow: 0 0 10px 1000px rgba($color: #000000, $alpha: 0.2);
+    outline: none;
+  }
+
+  &-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    background-color: $blue;
+    color: $white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+  }
+
+  &-button:hover {
+    background-color: #388ae2;
+  }
+
+  &-button:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+  }
+}

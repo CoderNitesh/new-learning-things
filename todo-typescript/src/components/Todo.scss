@@ -1,0 +1,31 @@
+.todo-form {
+  display: flex;
+  border-radius: 5px;
+  width: 29.5%;
+  padding: 20px;
+  margin: 15px;
+  background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+  transition: 0.2s;
+    
+  &-single_todo {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03);
+  }
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
